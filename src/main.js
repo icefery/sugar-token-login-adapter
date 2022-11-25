@@ -29,7 +29,7 @@ const cache = new Map()
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
-app.use(express.static(path.join(__dirname, 'public')))
+app.use(express.static(path.join(__dirname, '../public')))
 
 const HTML = props => (
   <html>
@@ -86,9 +86,7 @@ app.get('/', async (req, res, next) => {
 app.get('/sugar', async (req, res, next) => {
   try {
     const { user, url } = req.query
-    const [rows, fields] = await pool.query(`SELECT sugar_email as email, sugar_nickname as name FROM dim.dim_permission WHERE employee_code = ? LIMIT 1`, [
-      user
-    ])
+    const [rows, fields] = await pool.query(`SELECT sugar_email as email, sugar_nickname as name FROM dim.dim_permission WHERE employee_code = ? LIMIT 1`, [user])
     if (rows.length === 1) {
       // 生成 token
       const token = uuid.v4()

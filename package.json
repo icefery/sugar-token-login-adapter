@@ -2,7 +2,7 @@
   "name": "sugar-token-login-adapter",
   "version": "0.0.1",
   "scripts": {
-    "start": "babel-node main.js",
+    "start": "babel-node src/main.js",
     "format": "prettier --write ."
   },
   "dependencies": {
