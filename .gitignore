@@ -1,0 +1,16 @@
+### mac
+/**/.DStore
+
+### idea
+/**/.idea/
+
+### vscode
+/**/.vscode/
+
+### npm
+/**/node_modules/
+/**/package-lock.json
+
+### app
+/**/*.pid
+/**/*.log

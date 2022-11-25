@@ -1,0 +1,19 @@
+{
+  "name": "sugar-token-login-adapter",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "babel-node main.js",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/node": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "express": "~4.16.1",
+    "mysql2": "^2.3.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "uuid": "^9.0.0"
+  }
+}
