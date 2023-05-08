@@ -1,4 +1,4 @@
-create database if not exists dim;
+create schema if not exists dim;
 
 create table if not exists dim.dim_permission (
   employee_code  varchar(64) comment '员工编码',
